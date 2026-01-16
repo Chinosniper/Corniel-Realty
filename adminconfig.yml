@@ -3,7 +3,7 @@ backend:
   repo: chinosniper/Corniel-Realty          # Your exact username/repo
   branch: main                              # Your branch name
   auth_type: device-flow                    # Enables the device flow you want
-  app_id: YOUR_CLIENT_ID_HERE               # Replace with your real Client ID from GitHub OAuth App
+  app_id: Ov23liP4McoV0CdiOLB               # Replace with your real Client ID from GitHub OAuth App
   base_url: https://github.com
   auth_endpoint: login/oauth/authorize
 
