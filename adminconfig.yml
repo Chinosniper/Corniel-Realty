@@ -1,22 +1,26 @@
 backend:
   name: github
-  repo: chinosniper/Corniel-Realty   # Change to your exact username/repo
-  branch: main
+  repo: chinosniper/Corniel-Realty          # Your exact username/repo
+  branch: main                              # Your branch name
+  auth_type: device-flow                    # Enables the device flow you want
+  app_id: YOUR_CLIENT_ID_HERE               # Replace with your real Client ID from GitHub OAuth App
+  base_url: https://github.com
+  auth_endpoint: login/oauth/authorize
 
-media_folder: "images/properties"   # Where photos save
-public_folder: "/images/properties"
+media_folder: "images/properties"           # Folder where uploaded photos will save in your repo
+public_folder: "/images/properties"         # Public URL path for images on your site
 
 collections:
   - name: "properties"
     label: "Properties"
-    folder: "_properties"            # Folder for listing files (create it later)
-    create: true                     # Allow adding new
-    slug: "{{slug}}"
+    folder: "_properties"                   # Folder where listing files will be saved (create this empty folder if not already)
+    create: true                            # Allows adding new properties
+    slug: "{{slug}}"                        # Auto-generates file names
     fields:
       - {label: "Title", name: "title", widget: "string", required: true}
       - {label: "Price", name: "price", widget: "string", required: true}
       - {label: "Location", name: "location", widget: "string", required: true}
       - {label: "Description", name: "description", widget: "markdown", required: true}
-      - {label: "Features", name: "features", widget: "list", required: false}
+      - {label: "Features", name: "features", widget: "list", field: {widget: "string"}, required: false}
       - {label: "Main Image", name: "image", widget: "image", required: true}
-      - {label: "Additional Images", name: "gallery", widget: "list", fields: [{label: "Image", name: "image", widget: "image"}], required: false}
+      - {label: "Additional Images (Gallery)", name: "gallery", widget: "list", fields: [{label: "Image", name: "image", widget: "image"}], required: false}
