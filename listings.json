@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Luxury Modern Apartment",
+    "price": "US$350,000",
+    "location": "Santo Domingo",
+    "description": "Stunning 3-bedroom apartment with premium finishes, gym, pool, and 24/7 security.",
+    "features": ["3 Bedrooms", "3 Bathrooms", "180 m²", "Parking Included"],
+    "image": "https://media-production.lp-cdn.com/cdn-cgi/image/format=auto,quality=85,fit=scale-down,width=1280/https://media-production.lp-cdn.com/media/2838228e-f910-4328-9e73-1e51dba89710"
+  },
+  {
+    "id": 2,
+    "title": "Beachfront Villa",
+    "price": "US$850,000",
+    "location": "Puerto Plata",
+    "description": "Impresionante villa with direct beach access and infinity pool.",
+    "features": ["5 Bedrooms", "6 Bathrooms", "600 m² lot", "Private beach"],
+    "image": "https://goldenkeymanagement.com/wp-content/uploads/2017/07/beachvilla121826.jpg"
+  }
+]
