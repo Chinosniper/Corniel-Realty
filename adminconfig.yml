@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: chinosniper/Corniel-Realty   # Change to your exact username/repo
+  branch: main
+
+media_folder: "images/properties"   # Where photos save
+public_folder: "/images/properties"
+
+collections:
+  - name: "properties"
+    label: "Properties"
+    folder: "_properties"            # Folder for listing files (create it later)
+    create: true                     # Allow adding new
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Price", name: "price", widget: "string", required: true}
+      - {label: "Location", name: "location", widget: "string", required: true}
+      - {label: "Description", name: "description", widget: "markdown", required: true}
+      - {label: "Features", name: "features", widget: "list", required: false}
+      - {label: "Main Image", name: "image", widget: "image", required: true}
+      - {label: "Additional Images", name: "gallery", widget: "list", fields: [{label: "Image", name: "image", widget: "image"}], required: false}
