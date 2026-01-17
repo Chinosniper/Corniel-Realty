@@ -189,6 +189,37 @@
       </div>
     </div>
   </section>
+ <!-- ¿Quieres Vender tu Propiedad? -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title mb-5">¿Quieres Vender tu Propiedad?</h2>
+            <p class="text-center lead mb-5">Envíanos detalles y fotos. Te contactaremos rápidamente para una valoración gratuita.</p>
+            
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form action="https://formspree.io/f/tu-email-aqui" method="POST">
+                        <div class="row">
+                            <div class="col-md-6 mb-3"><input type="text" name="nombre" class="form-control" placeholder="Tu Nombre" required></div>
+                            <div class="col-md-6 mb-3"><input type="tel" name="telefono" class="form-control" placeholder="Tu Teléfono" required></div>
+                        </div>
+                        <div class="mb-3"><input type="email" name="email" class="form-control" placeholder="Tu Correo Electrónico" required></div>
+                        <div class="mb-3"><input type="text" name="ubicacion" class="form-control" placeholder="Ubicación de la Propiedad"></div>
+                        <div class="mb-3"><textarea name="descripcion" class="form-control" rows="4" placeholder="Descripción (habitaciones, baños, tamaño, etc.)" required></textarea></div>
+                        <div class="mb-3"><input type="text" name="precio" class="form-control" placeholder="Precio deseado (ej: US$300,000)"></div>
+                        <div class="mb-3">
+                            <label class="form-label">Sube fotos (máximo 10)</label>
+                            <input type="file" name="fotos" class="form-control" multiple accept="image/*">
+                            <small class="text-muted">O envía por WhatsApp: 809-404-4188</small>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg">Enviar Detalles</button>
+                        </div>
+                    </form>
+                    <p class="text-center mt-3"><strong>Más rápido:</strong> WhatsApp <a href="https://wa.me/18094044188">809-404-4188</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
 
   <!-- Nosotros -->
   <section id="about" class="py-5">
@@ -289,3 +320,4 @@
 </body>
 
 </html>
+
