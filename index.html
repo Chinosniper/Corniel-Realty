@@ -1,316 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Licenciada Anadelsy Corniel | Attorney & Real Estate Firm</title>
-    <meta name="description" content="Professional legal and real estate services in the Dominican Republic. Specializing in property transactions, contracts, disputes, and comprehensive legal advice.">
-    
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    
-    <style>
-        body { font-family: 'Roboto', sans-serif; color: #333; }
-        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
-        .navbar { background-color: #002147; }
-        .navbar-brand, .nav-link { color: white !important; }
-        .nav-link:hover { color: #a8d0e6 !important; }
-        .hero { 
-            background: linear-gradient(rgba(0, 33, 71, 0.7), rgba(0, 33, 71, 0.7)), 
-                        url('office.jpg'); 
-            background-size: cover; 
-            background-position: center; 
-            color: white; 
-            padding: 150px 0; 
-        }
-        .section-title { color: #002147; }
-        .service-card { transition: transform 0.3s; }
-        .service-card:hover { transform: translateY(-10px); }
-        .testimonial { background: #f1f6f9; }
-        footer { background: #002147; color: white; }
-        .btn-primary { background-color: #374785; border: none; }
-        .btn-primary:hover { background-color: #24335c; }
-        .lang-switch { position: fixed; top: 80px; right: 20px; z-index: 1000; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corniel Realty | Legal & Real Estate Expertise</title>
+  <meta name="description" content="Professional legal and real estate services in the Dominican Republic.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Roboto', sans-serif; color: #333; }
+    h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+    .navbar { background-color: #002147; }
+    .navbar-brand img { max-height: 80px; } /* Bigger logo size */
+    .hero { 
+      background: linear-gradient(rgba(0, 33, 71, 0.7), rgba(0, 33, 71, 0.7)), url('office.jpg');
+      background-size: cover; background-position: center; color: white; padding: 150px 0; 
+    }
+    .section-title { color: #002147; }
+    .property-card { transition: transform 0.3s; }
+    .property-card:hover { transform: translateY(-10px); }
+    .btn-primary { background-color: #374785; border: none; }
+    .btn-primary:hover { background-color: #24335c; }
+  </style>
 </head>
 <body>
 
-    <!-- Language Switcher -->
-    <div class="lang-switch bg-light rounded shadow p-2">
-        <a href="index.html" class="btn btn-sm btn-primary me-2">English</a>
-        <a href="index-es.html" class="btn btn-sm btn-outline-primary">Español</a>
+  <!-- Navbar with Logo -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="logo.png" alt="Corniel Realty Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#properties">Properties</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-           <a class="navbar-brand" href="#">
-  <img src="logo.png" alt="Corniel Realty Logo" height="50">
-</a> 
-           
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#properties">Properties</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <!-- Hero -->
+  <section id="home" class="hero text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Trusted Legal & Real Estate Expertise</h1>
+      <p class="lead mb-4">Comprehensive solutions for property transactions and legal needs in the Dominican Republic.</p>
+      <a href="#contact" class="btn btn-primary btn-lg">Schedule a Consultation</a>
+    </div>
+  </section>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero text-center">
-        <div class="container">
-            <h1 class="display-4 fw-bold">Trusted Legal & Real Estate Expertise</h1>
-            <p class="lead mb-4">Comprehensive solutions for property transactions, contracts, disputes, and all your legal needs in the Dominican Republic.</p>
-            <a href="#contact" class="btn btn-primary btn-lg">Schedule a Consultation</a>
-        </div>
-    </section>
+  <!-- Featured Properties (Dynamic - First 3) -->
+  <section id="properties" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center section-title mb-5">Featured Properties</h2>
+      <div class="row" id="featured-container"></div>
+      <div class="text-center mt-5">
+        <a href="properties.html" class="btn btn-outline-primary btn-lg">View All Properties →</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- Services Section -->
-    <section id="services" class="py-5">
-        <div class="container">
-            <h2 class="text-center section-title mb-5">Our Services</h2>
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <h3 class="section-title">Real Estate Services</h3>
-                    <div class="row">
-                        <div class="col-md-6"><div class="card service-card border-0 shadow-sm h-100"><div class="card-body"><h5>Property Transactions</h5><p>Buying, selling, and closing residential & commercial properties.</p></div></div></div>
-                        <div class="col-md-6"><div class="card service-card border-0 shadow-sm h-100"><div class="card-body"><h5>Title & Closing Services</h5><p>Title searches, insurance, and efficient closings.</p></div></div></div>
-                        <div class="col-md-6"><div class="card service-card border-0 shadow-sm h-100"><div class="card-body"><h5>Leasing & Landlord/Tenant</h5><p>Drafting leases and dispute resolution.</p></div></div></div>
-                        <div class="col-md-6"><div class="card service-card border-0 shadow-sm h-100"><div class="card-body"><h5>Real Estate Litigation</h5><p>Handling disputes, foreclosures, and boundary issues.</p></div></div></div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <h3 class="section-title">Legal Services</h3>
-                    <div class="row">
-                        <div class="col-md-6"><div class="card service-card border-0 shadow-sm h-100"><div class="card-body"><h5>Estate Planning</h5><p>Wills, trusts, probate, and asset protection.</p></div></div></div>
-                        <div class="col-md-6"><div class="card service-card border-0 shadow-sm h-100"><div class="card-body"><h5>Business Law</h5><p>Contracts, company formation, and commercial disputes.</p></div></div></div>
-                        <div class="col-md-6"><div class="card service-card border-0 shadow-sm h-100"><div class="card-body"><h5>Family Law</h5><p>Divorce, custody, and support matters.</p></div></div></div>
-                        <div class="col-md-6"><div class="card service-card border-0 shadow-sm h-100"><div class="card-body"><h5>General Counsel</h5><p>Ongoing legal advice for individuals and businesses.</p></div></div></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Other sections (Services, About, Team, Contact) - unchanged, add your original code here -->
 
-    <!-- Properties for Sale Section -->
-    <section id="properties" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center section-title mb-5">Properties for Sale</h2>
-            <p class="text-center lead mb-5">Exclusive selection of current listings represented by Lic. Anadelsy Corniel</p>
-            
-            <div class="row">
-                <!-- Property 1 Example -->
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100 shadow-sm border-0">
-                        <img src="https://media-production.lp-cdn.com/cdn-cgi/image/format=auto,quality=85,fit=scale-down,width=1280/https://media-production.lp-cdn.com/media/2838228e-f910-4328-9e73-1e51dba89710" class="card-img-top" alt="Luxury Modern Apartment" style="height: 250px; object-fit: cover;">
-                        <div class="card-body">
-                            <h5 class="card-title">Luxury Modern Apartment</h5>
-                            <p class="text-primary fw-bold fs-4">US$350,000</p>
-                            <p><strong>Location:</strong> Santo Domingo</p>
-                            <p>Exclusive 3-bedroom apartment with luxury finishes.</p>
-                            <ul class="list-unstyled">
-                                <li>✓ 3 Beds | 3 Baths</li>
-                                <li>✓ 180 m²</li>
-                                <li>✓ Pool & Gym</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer bg-white border-0">
-                            <a href="#contact" class="btn btn-primary w-100">More Info</a>
-                        </div>
-                    </div>
-                </div>
+  <!-- JavaScript for Dynamic Featured Listings -->
+  <script>
+    const featuredContainer = document.getElementById('featured-container');
 
-                <!-- Property 2 Example -->
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100 shadow-sm border-0">
-                        <img src="https://goldenkeymanagement.com/wp-content/uploads/2017/07/beachvilla121826.jpg" class="card-img-top" alt="Beachfront Villa" style="height: 250px; object-fit: cover;">
-                        <div class="card-body">
-                            <h5 class="card-title">Beachfront Villa</h5>
-                            <p class="text-primary fw-bold fs-4">US$850,000</p>
-                            <p><strong>Location:</strong> Puerto Plata</p>
-                            <p>Stunning 5-bedroom villa with direct beach access.</p>
-                            <ul class="list-unstyled">
-                                <li>✓ 5 Beds | 6 Baths</li>
-                                <li>✓ 600 m² lot</li>
-                                <li>✓ Private beach</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer bg-white border-0">
-                            <a href="#contact" class="btn btn-primary w-100">More Info</a>
-                        </div>
-                    </div>
+    fetch('https://api.github.com/repos/chinosniper/Corniel-Realty/contents/_properties')
+      .then(res => res.json())
+      .then(files => {
+        const mdFiles = files.filter(f => f.name.endsWith('.md'));
+        mdFiles.slice(0, 3).forEach(file => {  // Only first 3
+          fetch(file.download_url)
+            .then(res => res.text())
+            .then(md => {
+              const front = parseFrontMatter(md);
+              const card = document.createElement('div');
+              card.className = 'col-md-6 col-lg-4 mb-5';
+              card.innerHTML = `
+                <div class="card property-card border-0 shadow h-100">
+                  <img src="${front.image || 'https://via.placeholder.com/400x300'}" class="card-img-top" alt="${front.title}" style="height: 300px; object-fit: cover;">
+                  <div class="card-body d-flex flex-column">
+                    <h3 class="card-title">${front.title || 'Untitled Property'}</h3>
+                    <p class="text-primary fw-bold fs-3">${front.price || 'Contact for Price'}</p>
+                    <p><strong>Location:</strong> ${front.location || 'N/A'}</p>
+                    <p>${front.description ? front.description.substring(0, 100) + '...' : ''}</p>
+                    <a href="#contact" class="btn btn-primary mt-auto">Inquire Now</a>
+                  </div>
                 </div>
+              `;
+              featuredContainer.appendChild(card);
+            });
+        });
+      })
+      .catch(() => {
+        featuredContainer.innerHTML = '<p class="text-center text-muted">Loading featured properties...</p>';
+      });
 
-                <!-- Property 3 Example -->
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100 shadow-sm border-0">
-                        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/437455917.jpg?k=55ad2c78d87d0d6cb842e42586d837351af48e5c6aff941f7237248b59adf184&o=" class="card-img-top" alt="Luxury Condo" style="height: 250px; object-fit: cover;">
-                        <div class="card-body">
-                            <h5 class="card-title">Luxury Condo with Private Pool</h5>
-                            <p class="text-primary fw-bold fs-4">US$450,000</p>
-                            <p><strong>Location:</strong> Punta Cana</p>
-                            <p>Modern condo with private pool and beach access.</p>
-                            <ul class="list-unstyled">
-                                <li>✓ 3 Beds | 3 Baths</li>
-                                <li>✓ 200 m²</li>
-                                <li>✓ Golf nearby</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer bg-white border-0">
-                            <a href="#contact" class="btn btn-primary w-100">More Info</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    function parseFrontMatter(md) {
+      const match = md.match(/---\n([\s\S]*?)\n---\n([\s\S]*)/);
+      if (!match) return {};
+      const fm = match[1];
+      const body = match[2].trim();
+      const front = {};
+      fm.split('\n').forEach(line => {
+        const [key, ...val] = line.split(':');
+        if (key.trim()) front[key.trim()] = val.join(':').trim();
+      });
+      front.description = body;
+      return front;
+    }
+  </script>
 
-            <div class="text-center mt-5">
-                <p class="lead">Don't see what you're looking for? Contact us for our full portfolio.</p>
-                <a href="#contact" class="btn btn-outline-primary btn-lg">View All Properties</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sell Your Property Form -->
-    <section class="py-5">
-        <div class="container">
-            <h2 class="text-center section-title mb-5">Want to Sell Your Property?</h2>
-            <p class="text-center lead mb-5">Send us details and photos. We'll contact you quickly for a free valuation.</p>
-            
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <form action="https://formspree.io/f/your-email-here" method="POST">
-                        <div class="row">
-                            <div class="col-md-6 mb-3"><input type="text" name="name" class="form-control" placeholder="Your Name" required></div>
-                            <div class="col-md-6 mb-3"><input type="tel" name="phone" class="form-control" placeholder="Your Phone" required></div>
-                        </div>
-                        <div class="mb-3"><input type="email" name="email" class="form-control" placeholder="Your Email" required></div>
-                        <div class="mb-3"><input type="text" name="location" class="form-control" placeholder="Property Location"></div>
-                        <div class="mb-3"><textarea name="description" class="form-control" rows="4" placeholder="Description (beds, baths, size, etc.)" required></textarea></div>
-                        <div class="mb-3"><input type="text" name="price" class="form-control" placeholder="Asking Price (e.g. US$300,000)"></div>
-                        <div class="mb-3">
-                            <label class="form-label">Upload photos (up to 10)</label>
-                            <input type="file" name="photos" class="form-control" multiple accept="image/*">
-                            <small class="text-muted">Or send via WhatsApp: 809-404-4188</small>
-                        </div>
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-primary btn-lg">Submit Details</button>
-                        </div>
-                    </form>
-                    <p class="text-center mt-3"><strong>Faster:</strong> WhatsApp <a href="https://wa.me/18094044188">809-404-4188</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center section-title mb-5">About Us</h2>
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <p>Licenciada Anadelsy Corniel is a leading law and real estate firm dedicated to exceptional service in property and legal matters. With extensive experience, we bridge real estate transactions and complex legal needs to deliver the best outcomes for our clients.</p>
-                    <p>Our commitment to integrity, expertise, and personalized attention has made us trusted advisors in the community.</p>
-                </div>
-                <div class="col-md-6">
-                    <img src="office.jpg" class="img-fluid rounded shadow" alt="Our Office">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section id="team" class="py-5">
-        <div class="container">
-            <h2 class="text-center section-title mb-5">Our Team</h2>
-            <div class="row text-center">
-                <div class="col-md-6 mb-4">
-                    <img src="anadelsy.jpg" class="rounded-circle mb-3" width="200" alt="Lic. Anadelsy Corniel">
-                    <h4>Lic. Anadelsy Corniel</h4>
-                    <p>CEO & Principal Attorney - Real Estate & Commercial Law Specialist</p>
-                    <p class="fw-bold">809-404-4188</p>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <img src="manuel.jpg" class="rounded-circle mb-3" width="200" alt="Manuel Corniel">
-                    <h4>Manuel Corniel</h4>
-                    <p>Principal Real Estate Agent</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section id="testimonials" class="py-5 testimonial">
-        <div class="container">
-            <h2 class="text-center section-title mb-5">Client Testimonials</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <blockquote class="blockquote">
-                        <p>"Lic. Anadelsy Corniel handled our property closing perfectly. Highly recommended!"</p>
-                        <footer class="blockquote-footer">Real Estate Client</footer>
-                    </blockquote>
-                </div>
-                <div class="col-md-4">
-                    <blockquote class="blockquote">
-                        <p>"Expert guidance through a difficult case. Professional and caring."</p>
-                        <footer class="blockquote-footer">Litigation Client</footer>
-                    </blockquote>
-                </div>
-                <div class="col-md-4">
-                    <blockquote class="blockquote">
-                        <p>"The best firm for estate planning tied to real estate assets."</p>
-                        <footer class="blockquote-footer">Estate Client</footer>
-                    </blockquote>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center section-title mb-5">Contact Us</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <form>
-                        <div class="mb-3"><input type="text" class="form-control" placeholder="Your Name"></div>
-                        <div class="mb-3"><input type="email" class="form-control" placeholder="Your Email"></div>
-                        <div class="mb-3"><input type="tel" class="form-control" placeholder="Your Phone"></div>
-                        <div class="mb-3"><textarea class="form-control" rows="5" placeholder="Message"></textarea></div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-                <div class="col-md-6">
-                    <p><strong>Main Phone:</strong> <a href="tel:8094044188">809-404-4188</a></p>
-                    <p><strong>WhatsApp:</strong> <a href="https://wa.me/18094044188" target="_blank">809-404-4188</a></p>
-                    <p><strong>Email:</strong> info@anadelsycorniel.com</p>
-                    <p><strong>Address:</strong> [Add your address here]</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="py-4 text-center">
-        <div class="container">
-            <p>&copy; 2026 Licenciada Anadelsy Corniel. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
-
